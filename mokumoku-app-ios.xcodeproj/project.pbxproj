@@ -200,13 +200,13 @@
 			path = Streaming;
 			sourceTree = "<group>";
 		};
-		556C9342222592EC00ACD2DA /* extension */ = {
+		556C9342222592EC00ACD2DA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				556C93432225942200ACD2DA /* String+URLEncoded.swift */,
 				556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */,
 			);
-			path = extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		55C77FAC222410670001990F /* Frameworks */ = {
@@ -247,7 +247,7 @@
 		55D001082223E68B00BA00E6 /* mokumoku-app-ios */ = {
 			isa = PBXGroup;
 			children = (
-				556C9342222592EC00ACD2DA /* extension */,
+				556C9342222592EC00ACD2DA /* Extension */,
 				55D001092223E68B00BA00E6 /* AppDelegate.swift */,
 				55D0010B2223E68B00BA00E6 /* ViewController.swift */,
 				55D0010D2223E68B00BA00E6 /* Main.storyboard */,
