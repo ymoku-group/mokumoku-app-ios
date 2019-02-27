@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setNavigationBarItem()
         mastodonStreamReader = MastodonStreamingReader(domain: "mstdn.jp",
                                                        accessToken: "8735c4c8d85a51c57be9834594fc3af7e5ea55eb5ff7452f516aa2287d3773f5",
                                                        delegate: self)

@@ -21,6 +21,9 @@
 		556C933F222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */; };
 		556C93442225942200ACD2DA /* String+URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93432225942200ACD2DA /* String+URLEncoded.swift */; };
 		556C93462226C29100ACD2DA /* MastodonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93452226C29100ACD2DA /* MastodonError.swift */; };
+		556C93482226D01F00ACD2DA /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */; };
+		556C93492226D04A00ACD2DA /* SlideMenuControllerSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556C934B2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */; };
 		55C77FAE222410670001990F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; };
 		55C77FB2222410940001990F /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D001092223E68B00BA00E6 /* AppDelegate.swift */; };
@@ -77,6 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556C93492226D04A00ACD2DA /* SlideMenuControllerSwift.framework in CopyFiles */,
 				55C77FB2222410940001990F /* Starscream.framework in CopyFiles */,
 				556C93292224125D00ACD2DA /* Mastodon.framework in CopyFiles */,
 			);
@@ -100,6 +104,8 @@
 		556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingURLQueryParams.swift; sourceTree = "<group>"; };
 		556C93432225942200ACD2DA /* String+URLEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLEncoded.swift"; sourceTree = "<group>"; };
 		556C93452226C29100ACD2DA /* MastodonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonError.swift; sourceTree = "<group>"; };
+		556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
+		556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBarItem.swift"; sourceTree = "<group>"; };
 		55C77FAD222410670001990F /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		55C77FAF222410820001990F /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		55D001062223E68B00BA00E6 /* mokumoku-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mokumoku-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C93482226D01F00ACD2DA /* SlideMenuControllerSwift.framework in Frameworks */,
 				55C77FAE222410670001990F /* Starscream.framework in Frameworks */,
 				556C93282224125D00ACD2DA /* Mastodon.framework in Frameworks */,
 			);
@@ -197,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				556C93432225942200ACD2DA /* String+URLEncoded.swift */,
+				556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 		55C77FAC222410670001990F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */,
 				55C77FAF222410820001990F /* SocketIO.framework */,
 				55C77FAD222410670001990F /* Starscream.framework */,
 			);
@@ -498,6 +507,7 @@
 				55D0010C2223E68B00BA00E6 /* ViewController.swift in Sources */,
 				556C93442225942200ACD2DA /* String+URLEncoded.swift in Sources */,
 				55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */,
+				556C934B2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
