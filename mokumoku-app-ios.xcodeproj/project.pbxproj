@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556C931C2224125D00ACD2DA /* Mastodon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C93132224125D00ACD2DA /* Mastodon.framework */; };
+		556C93232224125D00ACD2DA /* MastodonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93222224125D00ACD2DA /* MastodonTests.swift */; };
+		556C93252224125D00ACD2DA /* Mastodon.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C93152224125D00ACD2DA /* Mastodon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C93282224125D00ACD2DA /* Mastodon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C93132224125D00ACD2DA /* Mastodon.framework */; };
+		556C93292224125D00ACD2DA /* Mastodon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556C93132224125D00ACD2DA /* Mastodon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556C9331222412AA00ACD2DA /* MastodonStreamingReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */; };
+		556C933422243F3600ACD2DA /* MastodonStreamingURLBuidler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */; };
+		556C933622257A8100ACD2DA /* MastodonStreamingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933522257A8100ACD2DA /* MastodonStreamingType.swift */; };
+		556C93382225856000ACD2DA /* MastodonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93372225856000ACD2DA /* MastodonData.swift */; };
+		556C933B2225862A00ACD2DA /* MastodonURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */; };
+		556C933D2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */; };
+		556C933F222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */; };
+		556C93442225942200ACD2DA /* String+URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93432225942200ACD2DA /* String+URLEncoded.swift */; };
+		556C93462226C29100ACD2DA /* MastodonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93452226C29100ACD2DA /* MastodonError.swift */; };
+		55C77FAE222410670001990F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; };
+		55C77FB2222410940001990F /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D001092223E68B00BA00E6 /* AppDelegate.swift */; };
 		55D0010C2223E68B00BA00E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0010B2223E68B00BA00E6 /* ViewController.swift */; };
 		55D0010F2223E68B00BA00E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D0010D2223E68B00BA00E6 /* Main.storyboard */; };
@@ -17,6 +33,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		556C931D2224125D00ACD2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D000FE2223E68B00BA00E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556C93122224125D00ACD2DA;
+			remoteInfo = Mastodon;
+		};
+		556C931F2224125D00ACD2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D000FE2223E68B00BA00E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55D001052223E68B00BA00E6;
+			remoteInfo = "mokumoku-app-ios";
+		};
+		556C93262224125D00ACD2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D000FE2223E68B00BA00E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556C93122224125D00ACD2DA;
+			remoteInfo = Mastodon;
+		};
 		55D0011B2223E68B00BA00E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55D000FE2223E68B00BA00E6 /* Project object */;
@@ -33,7 +70,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		55C77FB12224108C0001990F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C77FB2222410940001990F /* Starscream.framework in CopyFiles */,
+				556C93292224125D00ACD2DA /* Mastodon.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		556C93132224125D00ACD2DA /* Mastodon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mastodon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C93152224125D00ACD2DA /* Mastodon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mastodon.h; sourceTree = "<group>"; };
+		556C93162224125D00ACD2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556C931B2224125D00ACD2DA /* MastodonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastodonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C93222224125D00ACD2DA /* MastodonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonTests.swift; sourceTree = "<group>"; };
+		556C93242224125D00ACD2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingReader.swift; sourceTree = "<group>"; };
+		556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingURLBuidler.swift; sourceTree = "<group>"; };
+		556C933522257A8100ACD2DA /* MastodonStreamingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingType.swift; sourceTree = "<group>"; };
+		556C93372225856000ACD2DA /* MastodonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonData.swift; sourceTree = "<group>"; };
+		556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonURLBuilder.swift; sourceTree = "<group>"; };
+		556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingReaderDelegate.swift; sourceTree = "<group>"; };
+		556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingURLQueryParams.swift; sourceTree = "<group>"; };
+		556C93432225942200ACD2DA /* String+URLEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLEncoded.swift"; sourceTree = "<group>"; };
+		556C93452226C29100ACD2DA /* MastodonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonError.swift; sourceTree = "<group>"; };
+		55C77FAD222410670001990F /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		55C77FAF222410820001990F /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		55D001062223E68B00BA00E6 /* mokumoku-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mokumoku-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D001092223E68B00BA00E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D0010B2223E68B00BA00E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,10 +118,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		556C93102224125D00ACD2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C93182224125D00ACD2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C931C2224125D00ACD2DA /* Mastodon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55D001032223E68B00BA00E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C77FAE222410670001990F /* Starscream.framework in Frameworks */,
+				556C93282224125D00ACD2DA /* Mastodon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +159,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556C93142224125D00ACD2DA /* Mastodon */ = {
+			isa = PBXGroup;
+			children = (
+				556C93162224125D00ACD2DA /* Info.plist */,
+				556C93152224125D00ACD2DA /* Mastodon.h */,
+				556C93372225856000ACD2DA /* MastodonData.swift */,
+				556C93452226C29100ACD2DA /* MastodonError.swift */,
+				556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */,
+				556C93392225857600ACD2DA /* Streaming */,
+			);
+			path = Mastodon;
+			sourceTree = "<group>";
+		};
+		556C93212224125D00ACD2DA /* MastodonTests */ = {
+			isa = PBXGroup;
+			children = (
+				556C93222224125D00ACD2DA /* MastodonTests.swift */,
+				556C93242224125D00ACD2DA /* Info.plist */,
+			);
+			path = MastodonTests;
+			sourceTree = "<group>";
+		};
+		556C93392225857600ACD2DA /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */,
+				556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */,
+				556C933522257A8100ACD2DA /* MastodonStreamingType.swift */,
+				556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */,
+				556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		556C9342222592EC00ACD2DA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				556C93432225942200ACD2DA /* String+URLEncoded.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		55C77FAC222410670001990F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C77FAF222410820001990F /* SocketIO.framework */,
+				55C77FAD222410670001990F /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55D000FD2223E68B00BA00E6 = {
 			isa = PBXGroup;
 			children = (
 				55D001082223E68B00BA00E6 /* mokumoku-app-ios */,
 				55D0011D2223E68B00BA00E6 /* mokumoku-app-iosTests */,
 				55D001282223E68C00BA00E6 /* mokumoku-app-iosUITests */,
+				556C93142224125D00ACD2DA /* Mastodon */,
+				556C93212224125D00ACD2DA /* MastodonTests */,
 				55D001072223E68B00BA00E6 /* Products */,
+				55C77FAC222410670001990F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +229,8 @@
 				55D001062223E68B00BA00E6 /* mokumoku-app-ios.app */,
 				55D0011A2223E68B00BA00E6 /* mokumoku-app-iosTests.xctest */,
 				55D001252223E68C00BA00E6 /* mokumoku-app-iosUITests.xctest */,
+				556C93132224125D00ACD2DA /* Mastodon.framework */,
+				556C931B2224125D00ACD2DA /* MastodonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +238,7 @@
 		55D001082223E68B00BA00E6 /* mokumoku-app-ios */ = {
 			isa = PBXGroup;
 			children = (
+				556C9342222592EC00ACD2DA /* extension */,
 				55D001092223E68B00BA00E6 /* AppDelegate.swift */,
 				55D0010B2223E68B00BA00E6 /* ViewController.swift */,
 				55D0010D2223E68B00BA00E6 /* Main.storyboard */,
@@ -127,7 +269,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		556C930E2224125D00ACD2DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C93252224125D00ACD2DA /* Mastodon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		556C93122224125D00ACD2DA /* Mastodon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C932A2224125E00ACD2DA /* Build configuration list for PBXNativeTarget "Mastodon" */;
+			buildPhases = (
+				556C930E2224125D00ACD2DA /* Headers */,
+				556C930F2224125D00ACD2DA /* Sources */,
+				556C93102224125D00ACD2DA /* Frameworks */,
+				556C93112224125D00ACD2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mastodon;
+			productName = Mastodon;
+			productReference = 556C93132224125D00ACD2DA /* Mastodon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		556C931A2224125D00ACD2DA /* MastodonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C932D2224125E00ACD2DA /* Build configuration list for PBXNativeTarget "MastodonTests" */;
+			buildPhases = (
+				556C93172224125D00ACD2DA /* Sources */,
+				556C93182224125D00ACD2DA /* Frameworks */,
+				556C93192224125D00ACD2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556C931E2224125D00ACD2DA /* PBXTargetDependency */,
+				556C93202224125D00ACD2DA /* PBXTargetDependency */,
+			);
+			name = MastodonTests;
+			productName = MastodonTests;
+			productReference = 556C931B2224125D00ACD2DA /* MastodonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		55D001052223E68B00BA00E6 /* mokumoku-app-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55D0012E2223E68C00BA00E6 /* Build configuration list for PBXNativeTarget "mokumoku-app-ios" */;
@@ -135,10 +325,12 @@
 				55D001022223E68B00BA00E6 /* Sources */,
 				55D001032223E68B00BA00E6 /* Frameworks */,
 				55D001042223E68B00BA00E6 /* Resources */,
+				55C77FB12224108C0001990F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				556C93272224125D00ACD2DA /* PBXTargetDependency */,
 			);
 			name = "mokumoku-app-ios";
 			productName = "mokumoku-app-ios";
@@ -191,6 +383,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = YMoku;
 				TargetAttributes = {
+					556C93122224125D00ACD2DA = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					556C931A2224125D00ACD2DA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 55D001052223E68B00BA00E6;
+					};
 					55D001052223E68B00BA00E6 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -220,11 +420,27 @@
 				55D001052223E68B00BA00E6 /* mokumoku-app-ios */,
 				55D001192223E68B00BA00E6 /* mokumoku-app-iosTests */,
 				55D001242223E68C00BA00E6 /* mokumoku-app-iosUITests */,
+				556C93122224125D00ACD2DA /* Mastodon */,
+				556C931A2224125D00ACD2DA /* MastodonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		556C93112224125D00ACD2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C93192224125D00ACD2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55D001042223E68B00BA00E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,11 +468,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		556C930F2224125D00ACD2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C93382225856000ACD2DA /* MastodonData.swift in Sources */,
+				556C933F222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift in Sources */,
+				556C9331222412AA00ACD2DA /* MastodonStreamingReader.swift in Sources */,
+				556C933422243F3600ACD2DA /* MastodonStreamingURLBuidler.swift in Sources */,
+				556C933B2225862A00ACD2DA /* MastodonURLBuilder.swift in Sources */,
+				556C93462226C29100ACD2DA /* MastodonError.swift in Sources */,
+				556C933622257A8100ACD2DA /* MastodonStreamingType.swift in Sources */,
+				556C933D2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C93172224125D00ACD2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C93232224125D00ACD2DA /* MastodonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55D001022223E68B00BA00E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55D0010C2223E68B00BA00E6 /* ViewController.swift in Sources */,
+				556C93442225942200ACD2DA /* String+URLEncoded.swift in Sources */,
 				55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +520,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		556C931E2224125D00ACD2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556C93122224125D00ACD2DA /* Mastodon */;
+			targetProxy = 556C931D2224125D00ACD2DA /* PBXContainerItemProxy */;
+		};
+		556C93202224125D00ACD2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55D001052223E68B00BA00E6 /* mokumoku-app-ios */;
+			targetProxy = 556C931F2224125D00ACD2DA /* PBXContainerItemProxy */;
+		};
+		556C93272224125D00ACD2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556C93122224125D00ACD2DA /* Mastodon */;
+			targetProxy = 556C93262224125D00ACD2DA /* PBXContainerItemProxy */;
+		};
 		55D0011C2223E68B00BA00E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 55D001052223E68B00BA00E6 /* mokumoku-app-ios */;
@@ -312,6 +567,113 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		556C932B2224125E00ACD2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Mastodon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymoku.Mastodon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		556C932C2224125E00ACD2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Mastodon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymoku.Mastodon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		556C932E2224125E00ACD2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				INFOPLIST_FILE = MastodonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymoku.MastodonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mokumoku-app-ios.app/mokumoku-app-ios";
+			};
+			name = Debug;
+		};
+		556C932F2224125E00ACD2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				INFOPLIST_FILE = MastodonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymoku.MastodonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mokumoku-app-ios.app/mokumoku-app-ios";
+			};
+			name = Release;
+		};
 		55D0012C2223E68C00BA00E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -431,9 +793,14 @@
 		55D0012F2223E68C00BA00E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mokumoku-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +816,14 @@
 		55D001302223E68C00BA00E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mokumoku-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,6 +921,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		556C932A2224125E00ACD2DA /* Build configuration list for PBXNativeTarget "Mastodon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C932B2224125E00ACD2DA /* Debug */,
+				556C932C2224125E00ACD2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556C932D2224125E00ACD2DA /* Build configuration list for PBXNativeTarget "MastodonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C932E2224125E00ACD2DA /* Debug */,
+				556C932F2224125E00ACD2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55D001012223E68B00BA00E6 /* Build configuration list for PBXProject "mokumoku-app-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
