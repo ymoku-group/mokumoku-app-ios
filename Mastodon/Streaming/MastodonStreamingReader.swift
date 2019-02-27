@@ -41,6 +41,7 @@ public class MastodonStreamingReader {
     ///   - tags: タグ
     public func on(streamingType: MastodonStreamingType) {
         guard let url = urlBuilder.url(params: [MastodonStreamingURLQueryParams.stream.rawValue : streamingType.rawValue]) else {
+            delegate?.didFailure(error: mastodonError(code: MastodonStreamingInvalidURL))
             return
         }
         webSocketConnect(url: url)
@@ -56,6 +57,7 @@ public class MastodonStreamingReader {
     public func on(streamingType: MastodonStreamingType, tag: String) {
         guard let url = urlBuilder.url(params: [MastodonStreamingURLQueryParams.stream.rawValue : streamingType.rawValue,
                                                 MastodonStreamingURLQueryParams.tags.rawValue : tag]) else {
+                                                    delegate?.didFailure(error: mastodonError(code: MastodonStreamingInvalidURL))
                                                     return
         }
         webSocketConnect(url: url)
@@ -80,7 +82,7 @@ public class MastodonStreamingReader {
         webSocket?.onText = { text in
             guard let response = text.data(using: .utf8),
                 let data = try? self.jsonDecoder.decode(MastodonData.self, from: response) else {
-                    // TODO: JSON整形エラー
+                    self.delegate?.didFailure(error: mastodonError(code: MastodonStreamingDecodingError))
                     return
             }
             self.delegate?.didReceived(data: data)
