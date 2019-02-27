@@ -22,7 +22,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ワイもく！" id="9aU-D6-3Mt">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_black_24dp" id="jrE-yP-cxR"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic_config_black_24dp" id="amP-c0-lRX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic_timeline_24dp" id="amP-c0-lRX"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -183,11 +183,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_config_black_24dp" width="24" height="24"/>
         <image name="ic_menu_black_24dp" width="24" height="24"/>
         <image name="ic_mypage_30dp" width="30" height="30"/>
         <image name="ic_notification_30dp" width="30" height="30"/>
         <image name="ic_search_30dp" width="30" height="30"/>
+        <image name="ic_timeline_24dp" width="24" height="24"/>
         <image name="ic_timeline_30px" width="30" height="30"/>
     </resources>
 </document>
