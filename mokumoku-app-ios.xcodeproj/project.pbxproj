@@ -24,6 +24,10 @@
 		556C93482226D01F00ACD2DA /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */; };
 		556C93492226D04A00ACD2DA /* SlideMenuControllerSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		556C934B2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */; };
+		556C934E2226E77F00ACD2DA /* YMokuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C934D2226E77F00ACD2DA /* YMokuNavigationController.swift */; };
+		556C93512226E7E700ACD2DA /* YMokuColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93502226E7E700ACD2DA /* YMokuColor.swift */; };
+		556C93532226E86700ACD2DA /* UIColor+rgb+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93522226E86700ACD2DA /* UIColor+rgb+hex.swift */; };
+		556C93552226E8F800ACD2DA /* YMokuNavigationBarTitleTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93542226E8F800ACD2DA /* YMokuNavigationBarTitleTextAttribute.swift */; };
 		55C77FAE222410670001990F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; };
 		55C77FB2222410940001990F /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C77FAD222410670001990F /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D001092223E68B00BA00E6 /* AppDelegate.swift */; };
@@ -106,6 +110,10 @@
 		556C93452226C29100ACD2DA /* MastodonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonError.swift; sourceTree = "<group>"; };
 		556C93472226D01F00ACD2DA /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 		556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBarItem.swift"; sourceTree = "<group>"; };
+		556C934D2226E77F00ACD2DA /* YMokuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMokuNavigationController.swift; sourceTree = "<group>"; };
+		556C93502226E7E700ACD2DA /* YMokuColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMokuColor.swift; sourceTree = "<group>"; };
+		556C93522226E86700ACD2DA /* UIColor+rgb+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+rgb+hex.swift"; sourceTree = "<group>"; };
+		556C93542226E8F800ACD2DA /* YMokuNavigationBarTitleTextAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMokuNavigationBarTitleTextAttribute.swift; sourceTree = "<group>"; };
 		55C77FAD222410670001990F /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		55C77FAF222410820001990F /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		55D001062223E68B00BA00E6 /* mokumoku-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mokumoku-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,8 +213,26 @@
 			children = (
 				556C93432225942200ACD2DA /* String+URLEncoded.swift */,
 				556C934A2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift */,
+				556C93522226E86700ACD2DA /* UIColor+rgb+hex.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		556C934C2226E73300ACD2DA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				556C934D2226E77F00ACD2DA /* YMokuNavigationController.swift */,
+				556C93542226E8F800ACD2DA /* YMokuNavigationBarTitleTextAttribute.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		556C934F2226E7D700ACD2DA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				556C93502226E7E700ACD2DA /* YMokuColor.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		55C77FAC222410670001990F /* Frameworks */ = {
@@ -248,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				556C9342222592EC00ACD2DA /* Extension */,
+				556C934F2226E7D700ACD2DA /* Color */,
+				556C934C2226E73300ACD2DA /* Navigation */,
 				55D001092223E68B00BA00E6 /* AppDelegate.swift */,
 				55D0010B2223E68B00BA00E6 /* ViewController.swift */,
 				55D0010D2223E68B00BA00E6 /* Main.storyboard */,
@@ -504,8 +532,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C93532226E86700ACD2DA /* UIColor+rgb+hex.swift in Sources */,
+				556C93552226E8F800ACD2DA /* YMokuNavigationBarTitleTextAttribute.swift in Sources */,
 				55D0010C2223E68B00BA00E6 /* ViewController.swift in Sources */,
+				556C934E2226E77F00ACD2DA /* YMokuNavigationController.swift in Sources */,
 				556C93442225942200ACD2DA /* String+URLEncoded.swift in Sources */,
+				556C93512226E7E700ACD2DA /* YMokuColor.swift in Sources */,
 				55D0010A2223E68B00BA00E6 /* AppDelegate.swift in Sources */,
 				556C934B2226D11900ACD2DA /* UIViewController+NavigationBarItem.swift in Sources */,
 			);
