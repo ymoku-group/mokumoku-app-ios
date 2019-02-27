@@ -61,6 +61,11 @@ public class MastodonStreamingReader {
         webSocketConnect(url: url)
     }
     
+    /// ストリーミングAPIからの情報取得を停止する
+    public func off() {
+        webSocket?.disconnect()
+    }
+    
     /// WebSocketでストリーミングAPIに接続する
     ///
     /// - Parameter url: ストリーミングAPIのURL
