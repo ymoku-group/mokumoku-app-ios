@@ -182,7 +182,7 @@
 				556C93372225856000ACD2DA /* MastodonData.swift */,
 				556C93452226C29100ACD2DA /* MastodonError.swift */,
 				556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */,
-				556C93392225857600ACD2DA /* Streaming */,
+				55C6FF06225A52030047ADF0 /* Timeline */,
 			);
 			path = Mastodon;
 			sourceTree = "<group>";
@@ -233,6 +233,14 @@
 				556C93502226E7E700ACD2DA /* YMokuColor.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		55C6FF06225A52030047ADF0 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				556C93392225857600ACD2DA /* Streaming */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 		55C77FAC222410670001990F /* Frameworks */ = {
