@@ -14,7 +14,7 @@
 		556C93292224125D00ACD2DA /* Mastodon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556C93132224125D00ACD2DA /* Mastodon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		556C9331222412AA00ACD2DA /* MastodonStreamingReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */; };
 		556C933422243F3600ACD2DA /* MastodonStreamingURLBuidler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */; };
-		556C933622257A8100ACD2DA /* MastodonStreamingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933522257A8100ACD2DA /* MastodonStreamingType.swift */; };
+		556C933622257A8100ACD2DA /* MastodonTimelineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933522257A8100ACD2DA /* MastodonTimelineType.swift */; };
 		556C93382225856000ACD2DA /* MastodonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C93372225856000ACD2DA /* MastodonData.swift */; };
 		556C933B2225862A00ACD2DA /* MastodonURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */; };
 		556C933D2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */; };
@@ -101,7 +101,7 @@
 		556C93242224125D00ACD2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingReader.swift; sourceTree = "<group>"; };
 		556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingURLBuidler.swift; sourceTree = "<group>"; };
-		556C933522257A8100ACD2DA /* MastodonStreamingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingType.swift; sourceTree = "<group>"; };
+		556C933522257A8100ACD2DA /* MastodonTimelineType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonTimelineType.swift; sourceTree = "<group>"; };
 		556C93372225856000ACD2DA /* MastodonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonData.swift; sourceTree = "<group>"; };
 		556C933A2225862A00ACD2DA /* MastodonURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonURLBuilder.swift; sourceTree = "<group>"; };
 		556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonStreamingReaderDelegate.swift; sourceTree = "<group>"; };
@@ -201,7 +201,6 @@
 			children = (
 				556C9330222412AA00ACD2DA /* MastodonStreamingReader.swift */,
 				556C933C2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift */,
-				556C933522257A8100ACD2DA /* MastodonStreamingType.swift */,
 				556C933322243F3600ACD2DA /* MastodonStreamingURLBuidler.swift */,
 				556C933E222589F800ACD2DA /* MastodonStreamingURLQueryParams.swift */,
 			);
@@ -238,6 +237,7 @@
 		55C6FF06225A52030047ADF0 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				556C933522257A8100ACD2DA /* MastodonTimelineType.swift */,
 				556C93392225857600ACD2DA /* Streaming */,
 			);
 			path = Timeline;
@@ -523,7 +523,7 @@
 				556C933422243F3600ACD2DA /* MastodonStreamingURLBuidler.swift in Sources */,
 				556C933B2225862A00ACD2DA /* MastodonURLBuilder.swift in Sources */,
 				556C93462226C29100ACD2DA /* MastodonError.swift in Sources */,
-				556C933622257A8100ACD2DA /* MastodonStreamingType.swift in Sources */,
+				556C933622257A8100ACD2DA /* MastodonTimelineType.swift in Sources */,
 				556C933D2225869900ACD2DA /* MastodonStreamingReaderDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

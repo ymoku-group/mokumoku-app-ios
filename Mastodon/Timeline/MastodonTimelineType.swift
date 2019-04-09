@@ -8,8 +8,10 @@
 
 import Foundation
 
-/// MastodonのStremingAPIで流れてくるデータの種類
-public enum MastodonStreamingType: String {
+/// MastodonのTinelineAPIで流れてくるデータの種類
+/// - seealso:
+/// [Mastodon: API overview#Timelines](https://github.com/tootsuite/documentation/blob/master/Using-the-API/API.md#timelines)
+public enum MastodonTimelineType: String {
     /// 連合タイムライン
     case federated = "public"
     /// 連合タイムラインのメディアのみ表示

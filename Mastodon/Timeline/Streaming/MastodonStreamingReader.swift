@@ -39,7 +39,7 @@ public class MastodonStreamingReader {
     /// - Parameters:
     ///   - streamType: ストリーミングの種類
     ///   - tags: タグ
-    public func on(streamingType: MastodonStreamingType) {
+    public func on(streamingType: MastodonTimelineType) {
         guard let url = urlBuilder.url(params: [MastodonStreamingURLQueryParams.stream.rawValue : streamingType.rawValue]) else {
             delegate?.didFailure(error: mastodonError(code: MastodonStreamingInvalidURL))
             return
@@ -54,7 +54,7 @@ public class MastodonStreamingReader {
     ///   - tags: タグ
     /// - attention:
     /// ストリーミングの種類が`hashtag`もしくは`hashtag:local`の時以外はタグを指定しても無視される
-    public func on(streamingType: MastodonStreamingType, tag: String) {
+    public func on(streamingType: MastodonTimelineType, tag: String) {
         guard let url = urlBuilder.url(params: [MastodonStreamingURLQueryParams.stream.rawValue : streamingType.rawValue,
                                                 MastodonStreamingURLQueryParams.tags.rawValue : tag]) else {
                                                     delegate?.didFailure(error: mastodonError(code: MastodonStreamingInvalidURL))

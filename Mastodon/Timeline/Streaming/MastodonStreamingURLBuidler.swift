@@ -32,7 +32,7 @@ class MastodonStreamingURLBuidler: MastodonURLBuilder {
     /// - Returns: ストリーミングAPIのURL
     func url(params: [String : String]?) -> URL? {
         guard let stream = params?[MastodonStreamingURLQueryParams.stream.rawValue],
-            let streamType = MastodonStreamingType(rawValue: stream) else {
+            let streamType = MastodonTimelineType(rawValue: stream) else {
             return nil
         }
         let urlString = "wss://\(domain)/api/v\(apiVersion)/streaming?access_token=\(accessToken)&stream=\(stream)"
